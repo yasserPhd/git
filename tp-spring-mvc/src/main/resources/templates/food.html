@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>Saisie des étudiants</title>
+<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css" 
+ th:href="@{/css/bootstrap.min.css}"/>
+ <link rel="stylesheet" type="text/css" href="../static/css/style.css" 
+ th:href="@{/css/style.css}"/>
+</head>
+<body>
+	
+	<div class="col-md-6 col-sm-6  col-xs-12 spacer col-md-offset-3">
+		<div>Saisie d'un aliment</div>
+		<div >
+			
+					
+					<!-- {getProduct(${id}) -->
+						<!-- <label class="control-label">id:</label> 
+						<input type="text" id = "id" name = "id"/> -->
+						<form action="#" th:action="@{api/getProduct{2}"  method="get" >
+						 <button id="btn1" type="submit">add client</button>
+						  <!-- <br >	</br> -->
+					
+				</form> 
+		</div>
+	</div>
+	
+</body>
+</html>
